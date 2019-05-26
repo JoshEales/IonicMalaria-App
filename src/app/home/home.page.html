@@ -1,14 +1,60 @@
+
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+  <ion-toolbar color="tertiary">
+    <ion-button (click)="getUsPage()">About Us</ion-button>
+    <ion-title text-center>
+        <ion-icon name="logo-android"></ion-icon>
+      Malaria Quick Guide
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content >
+  <ion-col text-center>
+    <h4>What is Malaria?</h4>
+        <ion-button ion-button (click)="getAboutPage()" expand="block"  fill="outline" class="buttons"><ion-icon name="help"></ion-icon></ion-button>
+  </ion-col>
+  <ion-col text-center>
+    <h4>How to get malaria?</h4>
+      <ion-button ion-button (click)="getCausesPage()" expand="block" fill="outline" class="buttons"><ion-icon name="help"></ion-icon></ion-button>
+  </ion-col>
+  <ion-col text-center>
+    <h4>How not to get malaria?</h4>
+      <ion-button ion-button (click)="getPmPage()" expand="block" fill="outline" class="buttons"><ion-icon name="help"></ion-icon></ion-button>
+  </ion-col>
+  <ion-col text-center>
+    <h4>How to know if you have malaria
+        <ion-icon name="alert"></ion-icon></h4>
+      <ion-button ion-button (click)="getSymptomsPage()" expand="block" fill="outline" class="buttons"><ion-icon name="help"></ion-icon></ion-button>
+  </ion-col>
+  <ion-col text-center>
+    <h4>Malaria that can kill you
+      <ion-icon name="hand"></ion-icon></h4>
+      <ion-button ion-button (click)="getKillTypePage()" expand="block" fill="outline" class="buttons"><ion-icon name="help"></ion-icon></ion-button>
+  </ion-col>
+  <ion-col text-center>
+      <h4>Malaria that can't kill you
+          <ion-icon name="happy"></ion-icon></h4>
+        <ion-button ion-button (click)="getNoKillTypePage()" expand="block" fill="outline" class="buttons"><ion-icon name="help"></ion-icon></ion-button>
+    </ion-col>
+    <ion-col text-center>
+        <h4>How does malaria infect you?</h4>
+          <ion-button ion-button (click)="getInitiaCausePage()" expand="block" fill="outline" class="buttons"><ion-icon name="help"></ion-icon></ion-button>
+      </ion-col>
+      <ion-col text-center>
+          <h4>Do you believe in vaccinations?</h4>
+            <ion-button ion-button (click)="getVacPage()" expand="block" fill="outline" class="buttons"><ion-icon name="help"></ion-icon></ion-button>
+        </ion-col>
 </ion-content>
+
+<ion-footer>
+    <ion-toolbar color="tertiary">
+      <ion-title text-center><ion-icon name="logo-android"></ion-icon>
+        <ion-icon name="logo-apple"></ion-icon>
+        <ion-icon name="logo-angular"></ion-icon>
+        <ion-icon name="logo-github"></ion-icon>
+        <ion-icon name="logo-nodejs"></ion-icon>
+        <ion-icon name="logo-ionic"></ion-icon>
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>

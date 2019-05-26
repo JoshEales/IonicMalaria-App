@@ -4,3 +4,15 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
+
+.bg {
+    background: linear-gradient(to bottom, #ADD8E6 0%, #fff 100%);
+}
+
+.home {
+    background: linear-gradient(to bottom, rgb(143, 54, 216) 0%, #fff 100%);
+}
+
+.buttons {
+    color: black;
+}
